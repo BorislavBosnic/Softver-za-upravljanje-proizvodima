@@ -11,7 +11,7 @@ Artikal::Artikal(int s, std::string ime, std::string mjera, double c, double d)
 	kol = d;
 }
 
-bool Artikal::operator==(Artikal& a)
+bool Artikal::operator==(const Artikal& a)
 {
 	if (naziv == a.naziv)
 		return true;
@@ -39,7 +39,7 @@ std::ostream &operator<<(std::ostream &itok, const Artikal& a)
 {
 	itok << std::setw(5) << std::setfill('0') << a.sifra << std::setw(20) << a.naziv 
 		<<std::fixed<<std::setprecision(2)<< a.cijena << " KM " 
-		<< std::fixed << std::setprecision(2)<< a.kol <<" "<< a.jedinica << a.cijena*a.kol;
+		<< std::fixed << std::setprecision(2)<< a.kol <<" "<< a.jedinica << a();
 	return itok;
 }
 
@@ -50,10 +50,30 @@ Artikal& Artikal::operator=(const Artikal &a)
 	(*this).naziv = a.naziv;
 	(*this).jedinica = a.jedinica;
 	(*this).cijena = a.cijena;
+	(*this).kol = a.kol;
+	(*this).sifra = a.sifra;
 	return *this;
 }
 
-double Artikal::getCijena()
+double Artikal::getCijena() const
 {
 	return cijena;
+}
+
+double Artikal::getKol() const
+{
+	return kol;
+}
+
+double Artikal::operator()() const
+{
+	return cijena*kol;
+}
+
+bool Artikal::operator+=(double kolicina)
+{
+	kol += kolicina;
+	if (kol < 0)
+		return false;
+	return true;
 }

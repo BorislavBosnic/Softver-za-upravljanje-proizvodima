@@ -13,7 +13,6 @@ int main()
 	cout << a;
 	getchar();
 	getchar();
-	cout << "safd";
     return 0;
 }
 

@@ -1,8 +1,12 @@
-﻿  stdafx.cpp
-  Radnik.cpp
-  Prodavnica.cpp
-  Korisnik.cpp
+﻿  Prodavnica.cpp
+  Korpa.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2229): error C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2216): note: see declaration of 'std::_Copy_impl'
+  c:\users\lenovo\desktop\softver-za-upravljanje-proizvodima\prodavnica\korpa.cpp(14): note: see reference to function template instantiation '_OutIt std::copy<Artikal*,Artikal*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=Artikal *,
+              _InIt=Artikal *
+          ]
   Artikal.cpp
-  Admin.cpp
   Generating Code...
-  Prodavnica.vcxproj -> C:\Users\Lenovo\Desktop\Softver-za-upravljanje-proizvodima\Debug\Prodavnica.exe
