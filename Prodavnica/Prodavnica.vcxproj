@@ -145,28 +145,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\SUP\Admin.h" />
-    <ClInclude Include="..\SUP\Artikal.h" />
-    <ClInclude Include="..\SUP\Korisnik.h" />
-    <ClInclude Include="..\SUP\Radnik.h" />
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="Artikal.h" />
+    <ClInclude Include="Korisnik.h" />
+    <ClInclude Include="Radnik.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\SUP\Admin.cpp" />
-    <ClCompile Include="..\SUP\Artikal.cpp" />
-    <ClCompile Include="..\SUP\Korisnik.cpp" />
-    <ClCompile Include="..\SUP\Radnik.cpp" />
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="Artikal.cpp" />
+    <ClCompile Include="Korisnik.cpp" />
     <ClCompile Include="Prodavnica.cpp" />
+    <ClCompile Include="Radnik.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

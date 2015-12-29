@@ -24,16 +24,16 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\SUP\Admin.h">
+    <ClInclude Include="Admin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\SUP\Artikal.h">
+    <ClInclude Include="Artikal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\SUP\Korisnik.h">
+    <ClInclude Include="Korisnik.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\SUP\Radnik.h">
+    <ClInclude Include="Radnik.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,20 +44,17 @@
     <ClCompile Include="Prodavnica.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\SUP\Radnik.cpp">
+    <ClCompile Include="Admin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\SUP\Korisnik.cpp">
+    <ClCompile Include="Artikal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\SUP\Artikal.cpp">
+    <ClCompile Include="Korisnik.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\SUP\Admin.cpp">
+    <ClCompile Include="Radnik.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>
